@@ -1,0 +1,75 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	display: flex;
+	background-color: #262626FF;
+	height: 100vh;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+div{
+	position: relative;
+	margin: auto;
+	height: 200px;
+	width: 300px;
+	border-radius: 10px;
+	overflow: hidden;
+}
+.div1::before{
+	content: 'Image 1';
+	font-size: 30px;
+	font-family: 'Franklin Gothic Medium';
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	height: 200px;
+	width: 300px;
+	background: linear-gradient(45deg,rgb(24,230,93), rgb(70,214,224));
+}
+.div1:hover::before{
+	transition-property: all;
+	transition-duration: 1s;
+	transition-timing-function: linear;
+	opacity: 0;
+}
+.div2::before{
+	content: 'Image 2';
+	font-size: 30px;
+	font-family: 'Franklin Gothic Medium';
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	height: 200px;
+	width: 300px;
+	background: linear-gradient(45deg,rgb(243,239,25),rgb(233,100,47));
+}
+.div2:hover::before{
+	transition-property: all;
+	transition-duration: 1s;
+	transition-timing-function: linear;
+	transform: translate(100%);
+}
+.div3::before{
+	content: 'Image 3';
+	font-size: 30px;
+	font-family: 'Franklin Gothic Medium';
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	height: 200px;
+	width: 300px;
+	background: linear-gradient(45deg,rgb(233,93,191), rgb(224,70,96));
+}
+.div3:hover::before{
+	transition-property: all;
+	transition-duration: 1s;
+	transition-timing-function: linear;
+	transform: translateY(100%);
+}
